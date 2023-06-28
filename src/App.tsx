@@ -1,5 +1,9 @@
 import React from 'react';
+
 import '../src/CSS/home.css';
+import '../src/CSS/animatedSVG.css'
+import AnimatedSVG from './Components/AnimatedSVG';
+
 import flutterwave from '../src/Images/flutterwave_svg.png';
 import org_logo from '../src/Images/org_logo.png';
 import Payment_illustrastion from '../src/Images/Payment_illustrastion.png';
@@ -83,7 +87,37 @@ function App() {
         </div>
       </section>
       <section className="all-sect" id="third-sect">
-        {/* Third section */}
+        <div className="start-selling">
+          <p>
+            Whether you are a freelancer or a creator, this is the best way to receive money from your clients. No code required. Do it all from your Flutterwave dashboard.
+          </p>
+          <button className="btn-start-selling">Start selling</button>
+        </div>
+      </section>
+      <section className="all-sect" id="fourth-sect">
+        <div className='safety-container'>
+          <h2>Safety and security guaranteed</h2>
+          <p>
+            At Flutterwave, we take security seriously, so every payment made on our platform is 100% secure, even exceeding industry standards.
+          </p>
+          <div className="safety-contigent-box">
+            <div className='contigent contigent-one'>
+              <h3>ISO 27001 & 22301 Certification</h3>
+              <p>
+                Our ISO 27001 & 22301 certification means that we have acceptable business practices and processes, including a robust business continuity plan.
+              </p>
+            </div>
+            <div className='contigent contigent-two'>
+              <h3>PA DSS & PCI DSS Compliant</h3>
+              <p>
+                This certification is proof that Flutterwave as a payment gateway processor, has satisfied the highest level of Security Audit and authorizations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className='animatedSVG-Sect'>
+        <AnimatedSVG></AnimatedSVG>
       </section>
     </main>
     <footer></footer>

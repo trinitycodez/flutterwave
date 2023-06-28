@@ -57,7 +57,9 @@ body {
   font-family: 'Moderat', sans-serif;
   font-weight: 500;
   position: relative;
-  overflow-x: hidden;
+}
+main {
+  overflow-x: hidden !important;
 }
 .header-class {
   padding: 3rem 2rem 0;
@@ -143,7 +145,8 @@ body {
   font-weight: 300;
 }
 .first-sect-text button,
-.btn-sec-sect {
+.btn-sec-sect,
+.btn-start-selling {
     padding: 1rem;
     height: 6rem;
     width: 13rem;
@@ -252,8 +255,57 @@ body {
   height: 90rem;
   filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.2));
 }
-#third-sect {
+#third-sect,
+#fourth-sect {
   background-color: #fff;
   color: #1d1d1d;
-  padding: 16.5rem 2rem 0;
+  padding: 16rem 2rem 0;
+}
+.start-selling { 
+  font-family: 'Moderat', sans-serif;
+  font-weight: 300;
+  font-size: 8rem;
+  margin: 0 auto;
+  max-width: 109.2rem;
+  border: 2px solid #f00;
+  line-height: 10rem;
+  padding-bottom: 2rem;
+  word-spacing: -0.3rem;
+}
+.safety-container {
+  font-family: 'Moderat', sans-serif;
+  font-weight: 300;
+  font-size: 2.2rem;
+  margin: 0 auto;
+  max-width: 109.2rem;
+  border: 2px solid #f00;
+} 
+.safety-container h2 {
+  font-family: 'Millik', sans-serif;
+  font-weight: 500;
+  font-size: 8rem;
+  letter-spacing: -0.2rem;
+  line-height: 1.05;
+}
+.safety-container > p {
+  line-height: 3.2rem;
+  margin: 3rem 0rem 4.5rem;
+}
+.safety-contigent-box {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.6rem;
+  font-weight: 300;
+  justify-content: space-between;
+}
+.contigent {
+  max-width: 39rem;
+}
+.contigent h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.contigent p {
+  line-height: 2.5rem;
+  margin: 1.1rem 0rem 4.5rem;
 }
