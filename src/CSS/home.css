@@ -153,7 +153,7 @@ main {
     margin-top: 3rem;
     border-radius: 1rem;
     border: none;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-family: 'Moderat', sans-serif;
     font-weight: 500;
     outline: none;
@@ -225,7 +225,7 @@ main {
   margin-top: 2.3rem;
 }
 .sec-sect-text2 p {
-  /* border: 1px #00000066; */
+  border: 1px #00000066;
   border-style: none none none dashed;
   border-width: thin;
   font-weight: 300;
@@ -308,4 +308,71 @@ main {
 .contigent p {
   line-height: 2.5rem;
   margin: 1.1rem 0rem 4.5rem;
+}
+/* fifth sect */
+#fifth-sect {
+  background-color: #fff;
+  color: #1d1d1d;
+  padding: 10rem 2rem ;
+}
+.ready-to-start .cont {
+  /* border: 2px solid #f00; */
+  border-radius: 2rem;
+  background-color: #1d1d1d;
+  box-shadow: 0px 25px 50px #1d1d1d80;
+  font-family: 'Moderat', sans-serif;
+  color: #fff;
+  font-weight: 300;
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+  max-width: 109.2rem;
+  margin: 0 auto;
+  padding: 3rem 3rem 2rem 3rem;
+}
+.cont-wrapper-textbox {
+  margin: 6.6rem auto;
+  max-width: 74.2rem;
+}
+.ready-to-start .cont .cont-wrapper-textbox h3 {
+  font-size: 5rem;
+  font-family: "Millik", sans-serif;
+  font-weight: 500;
+  margin-bottom: 3.5rem;
+}
+.ready-to-start .cont .cont-wrapper-textbox p {
+  margin-bottom: 5rem;
+}
+.flexbtn-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  font-family: 'Moderat', sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+.btn-get-started {
+  background-color: #fff;
+  color: #1d1d1d;
+  margin-right: 5rem;
+}
+.flexbtn-nav .contactNav-sales {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.btn__icon {
+  height: 1.2rem;
+  width: auto;
+  margin: 0.3rem 0 0 1rem;
+}
+.footer-sect {
+  color: #1d1d1d;
+  background-color: #fff;
+  padding: 10rem 2rem 0;
+}
+.footer-sect .footer-nav {
+  border: 2px solid #f00;
+  max-width: 109.2rem;
+  margin: 0 auto;
 }
