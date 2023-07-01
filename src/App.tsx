@@ -224,7 +224,7 @@ function App() {
         </div>
       </div>
       <div className="footer-nav flex-social-handles">
-        <Countries></Countries>
+        <Countries />
         <nav className='social__links'>
           <span><a href="https://twitter.com/thflutterwave">Twitter</a></span>
           <span><a href="https://www.facebook.com/theFlutterwave/">Facebook</a></span>
