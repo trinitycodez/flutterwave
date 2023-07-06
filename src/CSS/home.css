@@ -82,15 +82,16 @@ main {
 .nav-content-box {
   display: flex;
   flex-direction: row;
-  height: 5rem;
+  height: 4.5rem;
   width: auto;
   justify-content: center;
   align-items: center;
 }
 .org-logo {
-    height: 4.8rem;
-    border: 2px dotted #0f0;
-    border-color: transparent;
+    height: auto;
+    width: 18.5rem;
+    /* border: 2px dotted #0f0; */
+    /* border: none; */
 }
 .nav-ULlist-items {
   display: flex;
@@ -108,17 +109,19 @@ main {
   justify-content: center;
   margin-right: 1.5rem;
   align-items: center;
-  height: 5rem;
+  height: 4.5rem;
   padding: 1.3rem;
   border: 2px solid #ffbb00;
 }
 /* .nav-ULlist-items li span { display: inline-block; } */
 #btn-sign-in {
-  height: 5rem;
-  width: 15rem;
-  border-radius: 1.3rem;
+  height: 4.5rem;
+  width: 14rem;
+  border-radius: 1rem;
   outline: none;
   border: none;
+  color: #000;
+  font-family: "Moderat", sans-serif;
 }
 #first-sect {
   display: flex;
@@ -374,6 +377,7 @@ main {
 .footer-sect .footer-nav {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   /* border: 2px solid #f00; */
   max-width: 109.2rem;
   margin: 0 auto;
@@ -410,4 +414,11 @@ main {
 .footer-ALinks:active,
 .footer-ALinks:hover {
   color: #00abab;
+}
+.flex-terms-policy .footer_last_content:first-child,
+.flex-terms-policy .footer_last_content:last-child nav {
+  display: flex;
+}
+.flex-terms-policy .footer_last_content nav p:not(:last-child) {
+  margin-right: 3rem;
 }
