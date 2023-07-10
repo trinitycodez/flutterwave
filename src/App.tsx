@@ -7,8 +7,8 @@ import AnimatedSVG from './Components/AnimatedSVG';
 import Countries from './Components/Countries';
 
 import flutterwave from '../src/Images/flutterwave_svg.png';
-import org_logo from '../src/Images/org_logo.png';
 import Payment_illustrastion from '../src/Images/Payment_illustrastion.png';
+import SectionHeaderNav from './Components/SectionHeaderNav';
 
 
 const App = () => {
@@ -23,24 +23,7 @@ const App = () => {
   return (
     <div onClick={handler}>
       <header className="header-class">
-        <nav className="nav-class">
-          <div className="nav-content-box org-logo">
-            <img src={org_logo} alt="Organisation logo" width="100%" height="100%" />
-          </div>
-          <div className="nav-content-box">
-            <ul className="nav-ULlist-items">
-              <li>Payments</li>
-              <li>Commerce</li>
-              <li><a href='https://flutterwave.com/card-issuing'>Issuing</a></li>
-              <li><a href='https://flutterwave.com/capital'>Capital</a></li>
-              <li><a href='https://flutterwave.com/grow'>Grow</a></li>
-              <li><a href='https://flutterwave.com/faas'>FaaS</a></li>
-            </ul>
-          </div>
-          <div className="nav-content-box">
-            <button id="btn-sign-in">Sign in</button>
-          </div>
-        </nav>
+        <SectionHeaderNav />
       </header>
       <main>
         <section className="all-sect" id="first-sect">

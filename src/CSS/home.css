@@ -77,7 +77,6 @@ main {
   align-items: center;
   border: 2px solid #0400ff;
   max-width: 109.2rem;
-  color: #262c55;
 }
 .nav-content-box {
   display: flex;
@@ -102,7 +101,12 @@ main {
   list-style: none;
   justify-content: center;
   align-items: center;
-  border: 2px double #00ffb3;
+  color: #262c55;
+  /* border: 2px double #00ffb3; */
+}
+a {
+  display: inline-flex;
+  color: #fff;
 }
 .nav-ULlist-items li {
   display: flex;
@@ -110,10 +114,95 @@ main {
   margin-right: 1.5rem;
   align-items: center;
   height: 4.5rem;
-  padding: 1.3rem;
-  border: 2px solid #ffbb00;
+  position: relative;
+  color: #262c55;
+  cursor: pointer;
+  /* border: 1px solid #ffbb00; */
+  /* padding: 1.3rem; */
 }
-/* .nav-ULlist-items li span { display: inline-block; } */
+.nav-ULlist-items li > a,
+.pay,
+.com {
+  padding: 1rem;
+  color: #262c55;
+}
+/* .nav-ULlist-items li > a:hover {
+  color: #00abab;
+} */
+.display__pay {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 33rem;
+  position: absolute;
+  top: 6rem;
+  left: -3.7rem;
+  padding: 2.5rem 2rem;
+  /* border: 1px solid #f00; */
+  border-radius: 1rem;
+  transform: translateY(0%);
+  box-shadow: 0px 10px 40px rgba(0,0,0,.2);
+  opacity: 0;
+  transition: transform .6s cubic-bezier(0.16, 1, 0.3, 1),
+  opacity .2s ease-out;
+  animation: displayPay .5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+@keyframes displayPay {
+  from {
+    opacity: 0.6;
+    transform: translateY(8%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-8%);
+  }
+}
+
+.display__pay li {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  color: #000;
+  height: auto;
+  margin: 0 0 3.5rem;
+  padding: 0;
+}
+.display__pay li:last-child {margin-bottom: 0;}
+.display__pay li a {
+  display: inline-flex;
+  margin-bottom: 0.5rem;
+  font-family: 'Moderat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #262c55;
+}
+.display__pay li a:hover,
+.nav-ULlist-items li > a:hover  {
+  color: #00abab !important;
+}
+.display__pay li p {
+  font-family: 'Moderat', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.7rem !important;
+}
+.display__pay__img img {object-fit: contain;}
+.display__pay__img {
+  max-width: 4.2rem;
+  height: 4.2rem;
+  margin-right: 1rem;
+  margin: 0.3rem 1rem 0 0;
+  border: 1px solid #000;
+  border-radius: 1.3rem;
+}
+.display__pay__text {
+  line-height: 2.24rem;
+}
+
+
 #btn-sign-in {
   height: 4.5rem;
   width: 14rem;
@@ -122,6 +211,22 @@ main {
   border: none;
   color: #000;
   font-family: "Moderat", sans-serif;
+  font-size: 1.4rem;
+  transition: all .3s ease;
+}
+#btn-sign-in a {
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  width: 100%;
+  height: 100%;
+}
+#btn-sign-in a:hover {
+  color: #fff;
+}
+#btn-sign-in:hover {
+  color: #fff !important;
+  background-color: #0a0e27e6;
 }
 #first-sect {
   display: flex;
@@ -322,7 +427,7 @@ main {
   /* border: 2px solid #f00; */
   border-radius: 2rem;
   background-color: #1d1d1d;
-  box-shadow: 0px 25px 50px #1d1d1d80;
+  box-shadow: 0px 2.5rem 5rem #1d1d1d80;
   font-family: 'Moderat', sans-serif;
   color: #fff;
   font-weight: 300;
