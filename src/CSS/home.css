@@ -107,6 +107,11 @@ main {
 a {
   display: inline-flex;
   color: #fff;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 .nav-ULlist-items li {
   display: flex;
@@ -129,13 +134,13 @@ a {
 /* .nav-ULlist-items li > a:hover {
   color: #00abab;
 } */
-.display__pay {
+.display__payCom {
   display: flex;
   flex-direction: column;
   background-color: #fff;
   width: 33rem;
   position: absolute;
-  top: 6rem;
+  top: 6.3rem;
   left: -3.7rem;
   padding: 2.5rem 2rem;
   /* border: 1px solid #f00; */
@@ -147,6 +152,9 @@ a {
   opacity .2s ease-out;
   animation: displayPay .5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+#com {
+  left: -5rem;
 }
 
 @keyframes displayPay {
@@ -160,45 +168,50 @@ a {
   }
 }
 
-.display__pay li {
+.display__payCom li {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: stretch;
   color: #000;
   height: auto;
-  margin: 0 0 3.5rem;
+  margin: 0 0 4rem;
   padding: 0;
 }
-.display__pay li:last-child {margin-bottom: 0;}
-.display__pay li a {
+.display__payCom li:last-child {margin-bottom: 0;}
+.display__payCom li a {
   display: inline-flex;
   margin-bottom: 0.5rem;
   font-family: 'Moderat', sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
   color: #262c55;
+  width: fit-content;
+  height: fit-content;
 }
-.display__pay li a:hover,
+.display__payCom li a:hover,
 .nav-ULlist-items li > a:hover  {
   color: #00abab !important;
 }
-.display__pay li p {
+.display__payCom li p {
   font-family: 'Moderat', sans-serif;
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 1.7rem !important;
 }
-.display__pay__img img {object-fit: contain;}
-.display__pay__img {
+.display__payCom__img {
   max-width: 4.2rem;
   height: 4.2rem;
   margin-right: 1rem;
-  margin: 0.3rem 1rem 0 0;
+  margin: 0.3rem 1.2rem 0 0;
   border: 1px solid #000;
-  border-radius: 1.3rem;
+  border-radius: 1.5rem;
 }
-.display__pay__text {
+.display__payCom__img img  {
+  border-radius: 1.5rem;
+}
+.display__payCom__text,
+.display__payCom__img {
   line-height: 2.24rem;
 }
 
@@ -215,11 +228,7 @@ a {
   transition: all .3s ease;
 }
 #btn-sign-in a {
-  justify-content: center;
-  align-items: center;
   color: #000;
-  width: 100%;
-  height: 100%;
 }
 #btn-sign-in a:hover {
   color: #fff;
@@ -252,21 +261,25 @@ a {
   line-height: 1.35;
   font-weight: 300;
 }
-.first-sect-text button,
-.btn-sec-sect,
-.btn-start-selling {
-    padding: 1rem;
-    height: 6rem;
-    width: 13rem;
-    margin-top: 3rem;
-    border-radius: 1rem;
-    border: none;
-    font-size: 1.6rem;
-    font-family: 'Moderat', sans-serif;
-    font-weight: 500;
-    outline: none;
-    background-color: #0a0e27;
-    color: #fff;
+.general_btn {
+  /* padding: 1.5rem; */
+  height: 6rem;
+  width: 13rem;
+  margin-top: 3rem;
+  border-radius: 1rem;
+  border: none;
+  font-size: 1.6rem;
+  font-family: 'Moderat', sans-serif;
+  font-weight: 500;
+  outline: none;
+  background-color: #0a0e27;
+  color: #fff;
+}
+.btn_first_sect{
+   width: 14rem;
+}
+.general_btn > a {
+  color: #fff !important;
 }
 .flutterwave-svg {
     width: auto;
@@ -460,19 +473,25 @@ a {
 }
 .btn-get-started {
   background-color: #fff;
-  color: #1d1d1d;
   margin-right: 5rem;
 }
-.flexbtn-nav .contactNav-sales {
+.btn-get-started > a {color: #1d1d1d !important}
+.flexbtn-nav .contact_nav_sales a {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  align-items: center;
+  color: #fff;
 }
 .btn__icon {
   height: 1.2rem;
   width: auto;
   margin: 0.3rem 0 0 1rem;
+  transform: translateX(0%);
+  transition: transform .6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.flexbtn-nav .contact_nav_sales a:hover .btn__icon {
+  color: red;
+  transform: translateX(70%);
 }
 .footer-sect {
   color: #1d1d1d;
@@ -503,6 +522,7 @@ a {
 .footer-nav .footer-flex-boxes .footer-head h5 {
   font-weight: 500;
 }
+.footer-head .ft__section__icon {display: none}
 .footer-nav .footer-flex-boxes .footer-nav-list {
   font-size: 1.6rem;
 }
@@ -515,6 +535,8 @@ a {
   color: #1d1d1d;
   text-decoration: none;
   transition: color .3s ease;
+  justify-content: flex-start;
+  width: fit-content;
 }
 .footer-ALinks:active,
 .footer-ALinks:hover {

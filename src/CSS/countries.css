@@ -37,6 +37,7 @@ a:visited {
   color: #1d1d1d;
   text-decoration: none;
   transition: color .3s ease;
+  width: fit-content;
 }
 a:active,
 a:hover,
