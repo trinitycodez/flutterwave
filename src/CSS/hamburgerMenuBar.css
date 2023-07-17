@@ -1,0 +1,108 @@
+.hamburger__menu_bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: auto;
+    padding: 0 0 .6rem;
+    background-color: #fff;
+}
+.hamburger__menu_bar .transitBar:first-child {
+    transition: all .2s ease;
+    transform: rotate(45deg) translateX(0);
+    margin: 0;
+}
+.hamburger__menu_bar .transitBar:nth-child(2) {
+    transition: all .2s ease;
+    margin: 0;
+    transform: rotate(-45deg) translateY(0)
+}
+.hamburger__menu_bar .bar_span {
+    /* display: inline-flex; */
+    transition: all .2s ease;
+    margin: .6rem 0 0;
+    width: 1.5em;
+    background-color: #000000a6;
+    border: 1px solid #0000003d;
+}
+.transitBarHMB {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    z-index: 4;
+}
+.span__pay_text {
+    color: #686868;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    margin-bottom: 2rem;
+    /* padding: 0 2rem; */
+}
+/* start content */
+.toggle_content_box {
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    position: absolute;
+    top: 5rem;
+    left: -2rem;
+    width: calc(100% + 4rem);
+    background-color: #fff;
+    padding: 2rem 0;
+    /* border: 2px solid #f00; */
+}
+.toggle_content_box .nav-ULlist-items {
+    height: fit-content;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+}
+.toggle_content_box .pay,
+.toggle_content_box .com {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px dashed #00000033;
+}
+#com {
+    left: .6rem;
+    margin-left: 0;
+}
+.toggle_content_box .nav-ULlist-items li {
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: fit-content;
+    margin-bottom: 3rem;
+    margin-right: 0;
+    padding: 0;
+    width: 100%;
+}
+.toggle_content_box .nav-ULlist-items > li {
+    padding: 0 2rem;
+}
+.toggle_content_box .nav-ULlist-items > li > a {
+    padding: 0;
+}
+.display__payCom__toggle {
+    width: inherit;
+}
+.display__payCom__text a {
+    color: #262c55;
+    font-weight: 600;
+}
+.display__payCom__text p {
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+.toggle_content_btn {
+    padding: 0 2rem;
+}
+#toggle__btn_node {
+    background-color: #0a0e27e6;
+    width: 100%;
+}
+#toggle__btn_node a {
+    color: #fff;
+    width: 100%;
+}

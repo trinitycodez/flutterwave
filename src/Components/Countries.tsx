@@ -29,10 +29,10 @@ const reducer = (state:ExActionType, action:ActionType) => {
   }
 }
 
-  type propsType = {
-    value:boolean
-    setValueVal:(e:boolean)=>void
-  }
+type propsType = {
+  value:boolean
+  setValueVal:(e:boolean)=>void
+}
 
 // the component
 const Countries = ({value, setValueVal}:propsType) => {

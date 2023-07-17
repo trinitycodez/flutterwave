@@ -1,0 +1,109 @@
+@media screen and (max-width:750px) {
+    .ready-to-start .cont {
+        font-size: 2rem;
+        line-height: 3rem;
+        margin-bottom: 4.3rem
+    }
+}
+@media screen and (min-width:751px) and (max-width:900px) {
+    .first-sect-text h4 {
+        font-size: 7rem;
+    }
+    .sec-sect-text p {
+        font-size: 5.2rem;
+    }
+    .sec-sect-box {
+        flex-direction: column;
+    }
+    .flutterwave-svg {
+        margin-left: -12rem;
+    }
+    .sec-sect-text2 {
+        max-width: 100%;
+        padding-right: 0;
+    }
+    .flexText h6 {
+        margin-left: 2rem;
+    }
+    .sec-sect-text2 p {
+        height: 13rem;
+        padding-left: calc(2rem + 2.25rem);
+    }
+    .sec-sect-text2 #list_change_hgt p {
+        height: 15rem;
+    }
+    .flexText, .sec-sect-text2 p {
+        padding-right: 0;
+    }
+    .Payment-illustration {
+        margin-top: 6rem;
+        min-width: 100%;
+        height: auto;
+        overflow: hidden;
+        border-radius: 1rem;
+        padding: 4rem 2rem 1rem
+    }
+    .Payment-illustration img {
+        transform: scale(1.5);
+    }
+    .sec-sect-box {
+        width: 100%;
+    }
+    .start-selling {
+        font-size: 5.2rem;
+        line-height: 7rem;
+    }
+    .sec-sect-text2 ul>li:last-child {
+        height: 11rem;
+    }
+    .safety-container h2 {
+        font-size: 5rem;
+        line-height: 5.6rem;
+    }
+    .flex-social-handles .social__links span {
+        display: none;
+        margin-bottom: 2.4rem;
+    }
+    .displayed__country {
+        margin-bottom: 3rem;
+    }
+    .footer-sect {
+        padding-top: 0;
+    }
+    .footer-sect .footer-nav {
+        flex-direction: column;
+        padding: 0;
+    }
+    /* .footer-nav-list { */
+    .footer-nav .footer-flex-boxes .footer-nav-list {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3rem;
+        border-bottom: 1px solid #f3f3f3;
+    }
+    .footer-head .ft__section__icon {
+        display: flex;
+    }
+    .footer-nav .footer-flex-boxes {
+        min-width: 100%;
+    }
+    .footer-nav .footer-flex-boxes .footer-nav-list div {
+        display: none;
+    }
+    .footer-sect .flex-social-handles {
+        align-items: start;
+        flex-direction: column-reverse;
+        border-top: none;
+        margin-bottom: 3rem;
+    }
+    .footer-nav-list p {
+        display: none;
+        margin-bottom: 2.4rem;
+    }
+    #copyright {
+        padding-bottom: 3rem;
+        margin: 0 0 2.4rem;
+        border-bottom: 1px solid #f3f3f3;
+    }
+
+}

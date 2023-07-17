@@ -4,9 +4,8 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    border: 1px solid #f3f3f3;
-    border-left: none;
-    border-right: none;
+    border-top: 1px solid #f3f3f3;
+    border-bottom: 1px solid #f3f3f3;
 }
 .displayed__country {
     display: flex;
@@ -30,6 +29,7 @@
     margin: .6rem 0 0 1rem;
 }
 .flex-social-handles .social__links span:not(:last-child) {
+    display: inline-flex;
     margin-right: 3rem;
 }
 a:link,

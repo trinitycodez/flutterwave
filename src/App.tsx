@@ -1,15 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import '../src/CSS/home.css';
 import '../src/CSS/animatedSVG.css'
 import '../src/CSS/countries.css'
+import '../src/CSS/MDView.css'
 import AnimatedSVG from './Components/AnimatedSVG';
 import Countries from './Components/Countries';
-
-import flutterwave from '../src/Images/flutterwave_svg.png';
-import Payment_illustrastion from '../src/Images/Payment_illustrastion.png';
 import SectionHeaderNav from './Components/SectionHeaderNav';
+import MainSectOne from './Components/MainSectPaymentLink/MainSectOne';
+import MainSectTwo from './Components/MainSectPaymentLink/MainSectTwo';
+import MainSectThree from './Components/MainSectPaymentLink/MainSectThree';
+import MainSectFour from './Components/MainSectPaymentLink/MainSectFour';
+import MainSectFive from './Components/MainSectPaymentLink/MainSectFive';
+import SocialFTHandler from './Components/SocialFTHandler';
+import TermsPolicy from './Components/TermsPolicy';
 
+export const MenuContext = React.createContext(0);
 
 const App = () => {
 
@@ -20,119 +26,43 @@ const App = () => {
     console.log("oops! "+ value);
   }
 
+  const [scWidth, setScWidth] = useState(document.body.clientWidth);
+  useEffect(() => {
+    const watch = () => {
+      setScWidth(document.body.clientWidth)
+    }
+    window.onresize = () => {
+      watch();
+    }
+  
+  }, [scWidth])
+
+
   return (
     <div onClick={handler}>
-      <header className="header-class">
-        <SectionHeaderNav />
+      <header className='header-class'>
+        <MenuContext.Provider value={scWidth}>
+          <SectionHeaderNav />
+        </MenuContext.Provider>
       </header>
       <main>
         <section className="all-sect" id="first-sect">
-          <div className="first-sect-text">
-            <h4>Get paid, anywhere</h4>
-            <p>
-              Sell online without a website. Create a payment link in just a few clicks and share the link with your customers—no code required.
-            </p>
-            <button type='button' className='general_btn btn_first_sect'><a href="http://flutterwave.com/ng/contact-sales">Contact sales</a></button>
-          </div>
-          <div className="flutterwave-svg">
-            <img src={flutterwave} alt="flutterwave-svg" width="100%" height="100%" />
-          </div>
+          <MainSectOne />
         </section>
         <section className="all-sect" id="second-sect">
-          <div className='sec-sect-text'>
-            <p>
-              Collect payments in minutes, without a line of code
-            </p>
-          </div>
-          <div className="sec-sect-box">
-            <div className="sec-sect-text2">
-              <ul>
-                <li>
-                  {/* number one step */}
-                  <div className="flexText">
-                    <div></div>
-                    <span className='sec-sect-digits'>1</span>
-                    <h6>Create a Flutterwave account</h6>
-                  </div>
-                  <p>Create a free Flutterwave account if you're a new user or login if you're a registered user.</p>
-                </li>
-                <li>
-                  <div className="flexText">
-                    <div></div>
-                    <span className='sec-sect-digits'>2</span>
-                    <h6>Create a payment link</h6>
-                  </div>
-                  <p>Sell a product or service, start a subscription. Match the look and feel of your brand by adding your logo and colors.</p>
-                </li>
-                <li>
-                  <div className="flexText">
-                    <div></div>
-                    <span className='sec-sect-digits'>3</span>
-                    <h6>Accept payment</h6>
-                  </div>
-                  <p>Share your payment link, get paid and focus on creating.</p>
-                </li>
-              </ul>
-              <button type='button' className='general_btn btn-sec-sect'><a href='https://flutterwave.com/ng/contact-sales'>Get started</a></button>
-            </div>
-            <div className='Payment-illustration'>
-              <img src={Payment_illustrastion} alt="Payment illustration" width="100%" height="100%" style={{borderRadius: '1rem'}} />
-            </div>
-          </div>
+          <MainSectTwo />
         </section>
         <section className="all-sect" id="third-sect">
-          <div className="start-selling">
-            <p>
-              Whether you are a freelancer or a creator, this is the best way to receive money from your clients. No code required. Do it all from your Flutterwave dashboard.
-            </p>
-            <button type='button' className="general_btn btn-start-selling"><a href="http://flutterwave.com/ng/contact-sales">Start selling</a></button>
-          </div>
+          <MainSectThree />
         </section>
         <section className="all-sect" id="fourth-sect">
-          <div className='safety-container'>
-            <h2>Safety and security guaranteed</h2>
-            <p>
-              At Flutterwave, we take security seriously, so every payment made on our platform is 100% secure, even exceeding industry standards.
-            </p>
-            <div className="safety-contigent-box">
-              <div className='contigent contigent-one'>
-                <h3>ISO 27001 & 22301 Certification</h3>
-                <p>
-                  Our ISO 27001 & 22301 certification means that we have acceptable business practices and processes, including a robust business continuity plan.
-                </p>
-              </div>
-              <div className='contigent contigent-two'>
-                <h3>PA DSS & PCI DSS Compliant</h3>
-                <p>
-                  This certification is proof that Flutterwave as a payment gateway processor, has satisfied the highest level of Security Audit and authorizations.
-                </p>
-              </div>
-            </div>
-          </div>
+          <MainSectFour />
         </section>
         <section className='animatedSVG-Sect'>
-          <AnimatedSVG></AnimatedSVG>
+          <AnimatedSVG />
         </section>
         <section className="all-sect ready-to-start" id='fifth-sect'>
-          <div className="cont">
-            <div className="cont-wrapper-textbox">
-              <h3>Ready to start selling?</h3>
-              <p>
-                Create an account and instantly start accepting payments, selling your beautiful products online and building financial tools.
-              </p>
-              <div className="flexbtn-nav">
-                <button type='button' className="general_btn btn-get-started"><a href="http://flutterwave.com/ng/contact-sales">Get started</a></button>
-                <div className="contact_nav_sales">
-                  <a href="http://flutterwave.com/ng/contact-sales">
-                    <span>Contact sales</span>
-                    <svg width="10" height="15" viewBox="0 0 10 15" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" className="btn__icon">
-                    <path d="M9.692 8.12608L1.74813 14.7865C1.54551 14.9319 1.28487 15.008 1.0183 14.9993C0.751731 14.9907 0.498863 14.8981 0.310228 14.7399C0.121594 14.5817 0.0110864 14.3697 0.000789915 14.1462C-0.00950656 13.9227 0.0811663 13.7042 0.254688 13.5343L7.44653 7.5L0.254688 1.46569C0.0811663 1.2958 -0.00950656 1.07728 0.000789915 0.853776C0.0110864 0.630275 0.121594 0.418262 0.310228 0.260105C0.498863 0.101948 0.751731 0.00929518 1.0183 0.000662293C1.28487 -0.00797059 1.54551 0.068052 1.74813 0.213538L9.692 6.87392C9.88927 7.04031 10 7.26539 10 7.5C10 7.73461 9.88927 7.95969 9.692 8.12608Z" fill='#FFFFFF'></path>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <MainSectFive />
         </section>
       </main>
       <footer className='footer-sect'>
@@ -219,27 +149,10 @@ const App = () => {
         </div>
         <div className="footer-nav flex-social-handles">
           <Countries value={value} setValueVal={(val:boolean)=> setValue(val)} />
-          <nav className='social__links'>
-            <span><a href="https://twitter.com/thflutterwave">Twitter</a></span>
-            <span><a href="https://www.facebook.com/theFlutterwave/">Facebook</a></span>
-            <span><a href="https://www.instagram.com/theflutterwave/">Instagram</a></span>
-            <span><a href="https://www.youtube.com/channel/UCBIAbIvsVyppFIiQP9CV-zQ">YouTube</a></span>
-            <span><a href="https://www.linkedin.com/company/flutterwave/">LinkedIn</a></span>
-          </nav>
+          <SocialFTHandler value={scWidth} />
         </div>
         <div className="footer-nav flex-terms-policy">
-          <div className='footer_last_content'>
-            <p>&copy;&nbsp;Flutterwave</p>
-          </div>
-          <div className='footer_last_content'>
-            <nav>
-              <p><a href="https://flutterwave.com/ng/privacy-policy">Privacy policy</a></p>
-              <p><a href="https://flutterwave.com/ng/terms">Terms of use</a></p>
-              <p><a href="https://flutterwave.com/ng/cookies-policy">Cookie policy</a></p>
-              <p><a href="https://flutterwave.com/ng/merchant-service-agreement">Merchant service agreement</a></p>
-              <p><a href="https://flutterwave.com/ng/payment-protection-promise">Payment protection promise</a></p>
-            </nav>
-          </div>
+          <TermsPolicy value={scWidth} />
         </div>
       </footer>
     </div>
