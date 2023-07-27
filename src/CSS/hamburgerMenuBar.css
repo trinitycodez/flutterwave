@@ -64,16 +64,21 @@
     display: flex;
     flex-direction: column;
     border-bottom: 1px dashed #00000033;
+    margin-bottom: 2.5rem !important;
 }
-#com {
+.toggle_content_box #com {
     left: .6rem;
     margin-left: 0;
+}
+.toggle_content_box #pay li:last-child,
+.toggle_content_box #com li:last-child {
+    margin-bottom: 2.5rem;
 }
 .toggle_content_box .nav-ULlist-items li {
     justify-content: flex-start;
     align-items: flex-start;
     height: fit-content;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     margin-right: 0;
     padding: 0;
     width: 100%;
@@ -83,20 +88,26 @@
 }
 .toggle_content_box .nav-ULlist-items > li > a {
     padding: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
+.toggle_content_box .nav-ULlist-items > li > a:hover p {color: #262c55;}
 .display__payCom__toggle {
     width: inherit;
 }
-.display__payCom__text a {
+.display__payCom__text span {
     color: #262c55;
     font-weight: 600;
 }
 .display__payCom__text p {
     font-weight: 400;
     font-size: 1.4rem;
+    color: #262c55;
 }
 .toggle_content_btn {
-    padding: 0 2rem;
+    padding: 2rem 2rem 1rem;
 }
 #toggle__btn_node {
     background-color: #0a0e27e6;
@@ -105,4 +116,21 @@
 #toggle__btn_node a {
     color: #fff;
     width: 100%;
+}
+.display__payCom__toggle li a {
+    width: 100%;
+}
+.display__payCom__toggle li a:hover
+.display__payCom__text span {
+    color: #00abab;
+}
+.toggle_content_box .ULlist_items a span {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: .6rem;
+}
+.toggle_content_box .ULlist_items a p {
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #262c55;
 }

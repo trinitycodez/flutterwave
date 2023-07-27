@@ -1,0 +1,212 @@
+a:link {
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: inherit;
+}
+body {
+    color: #1d1d1d;
+    text-rendering: optimizeLegibility;
+}
+/* stop */
+.all-sect {
+    position: relative;
+}
+.first_section__class {
+    border: 1px solid #000;
+}
+.sect__one_home {
+    position: relative;
+    flex-direction: column !important;
+}
+.sect__one__cont {
+    position: relative;
+    width: 75rem;
+    border: 1px solid #f00;
+}
+.sect__one__cont .heading__one {
+    font-family: "Millik", sans-serif;
+    font-size: 10rem;
+    font-weight: 500;
+    color: #000;
+    width: inherit;
+    letter-spacing: -0.03em;
+    line-height: 10.8rem;
+    margin-bottom: 3.5rem;
+}
+.sect__one__cont .heading__one span {
+    color: #fb9129;
+}
+.sect__one__cont p {
+    font-family: "Moderat", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 300;
+    line-height: 3.2rem;
+    margin-right: 7rem;
+}
+.two__boxes_mH {
+    width: max-content;
+    height: 100%;
+    position: relative;
+    border: 1px solid #fa0;
+}
+.first_box_mH {
+    margin: 11rem 6rem 0 0;
+}
+.second_box_mH {
+    top: -11rem;
+}
+.btn__mH {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid;
+    width: fit-content;
+    margin-top: 3.5rem;
+}
+.sect__one_genBtn {
+    height: 6.1rem;
+    width: 15rem;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1.6rem;
+    font-family: 'Moderat', sans-serif;
+    font-weight: 500;
+    outline: none;
+    background-color: #0a0e27;
+    color: #fff;
+}
+.CA__btn {
+    border-radius: 1rem;
+    width: 20rem;
+    margin-right: 3rem;
+}
+.CS__btn a {
+    color: #0a0e27 !important;
+}
+.CS__btn {
+    background-color: #eeeeee;
+}
+#second-sect {
+    background-color: #fff;
+    padding: 0;
+}
+.sect__one_btn_img {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+}
+.image__mH {
+    height: 75.2rem;
+    position: relative;
+}
+.image__mH img,
+.image__nH img {
+    object-fit: cover;
+    -o-object-fit: cover;
+    object-position: center;
+}
+.image__mH img {
+    object-position: bottom right;
+}
+.image__nH {
+    height: 68rem;
+    position: relative;
+}
+.figCap__foodcity,
+.figCap__famasi {
+    position: absolute;
+    right: 3rem;
+    bottom: 2.6rem;
+    font-size: 2.4rem;
+    font-family: "Moderat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+}
+.figCap__famasi {
+    left: 3rem;
+}
+.text__nH {
+    max-width: 38rem;
+    color: #1d1d1d;
+    font-family: "Moderat", sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    position: relative;
+    margin-top: 6rem;
+    line-height: 3.2rem;
+}
+#third-sect {
+    padding: 15rem 2rem 0;
+}
+.third_section__cont,
+.fourth_section__cont {
+    width: 109.2rem;
+    margin: 0 auto;
+    border: 1px solid #f00;
+}
+.business__para_oH {
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+    font-weight: 500;
+    margin-bottom: 3.5rem;
+}
+.businesses__items_oH {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.img_items_oH img {
+    height: 3.6rem;
+}
+.img_items_oH:nth-child(5) img {
+    height: 2.6rem;
+}
+.img_items_oH {
+    margin: 2rem 2.5rem;
+}
+.img_items_oH:first-child {
+    margin-left: 0;
+}
+#fourth-sect {
+    padding: 20rem 2rem 0;
+}
+.heading_pH {
+    color: #1d1d1d;
+    font-family: "Millik", sans-serif;
+    font-weight: 500;
+    font-size: 5rem;
+    letter-spacing: .1rem;
+    width: 70rem;
+    margin-bottom: 4rem;
+}
+.heading_pH span {
+    color: #fb9129;
+}
+.activites_ads_pH {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex_ads_pH:nth-child(2) {height: 50rem;}
+.flex_ads_pH {
+    display: inherit;
+    flex-direction: column;
+    max-width: 32rem;
+}
+.text_col1_pH h6 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: #050505;
+}
+.text_col1_pH p {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 3.2rem;
+    color: #050505;
+}

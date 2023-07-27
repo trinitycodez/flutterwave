@@ -1,18 +1,15 @@
-@media screen and (max-width:750px) {
-    .ready-to-start .cont {
-        font-size: 2rem;
-        line-height: 3rem;
-        margin-bottom: 4.3rem
-    }
-}
-@media screen and (min-width:751px) and (max-width:900px) {
+@media only screen and (max-width:900px) {
     .first-sect-text h4 {
         font-size: 7rem;
+    }
+    .general_btn > a{
+        width: 100%;
     }
     .sec-sect-text p {
         font-size: 5.2rem;
     }
     .sec-sect-box {
+        width: 100%;
         flex-direction: column;
     }
     .flutterwave-svg {
@@ -40,15 +37,16 @@
         min-width: 100%;
         height: auto;
         overflow: hidden;
+        border-top: 3rem solid #fff;
         border-radius: 1rem;
-        padding: 4rem 2rem 1rem
+        /* padding: 4rem 2rem 1rem */
     }
     .Payment-illustration img {
         transform: scale(1.5);
     }
-    .sec-sect-box {
+    /* .sec-sect-box {
         width: 100%;
-    }
+    } */
     .start-selling {
         font-size: 5.2rem;
         line-height: 7rem;
@@ -83,12 +81,27 @@
     }
     .footer-head .ft__section__icon {
         display: flex;
+        transform: rotate(0deg);
+        transition: transform .3s ease;
+    }
+    .show0 .footer-head .ft__section__icon,
+    .show1 .footer-head .ft__section__icon,
+    .show2 .footer-head .ft__section__icon,
+    .show3 .footer-head .ft__section__icon,
+    .show4 .footer-head .ft__section__icon,
+    .show5 .footer-head .ft__section__icon,
+    .show6 .footer-head .ft__section__icon {
+        transform: rotate(-180deg);
     }
     .footer-nav .footer-flex-boxes {
         min-width: 100%;
     }
     .footer-nav .footer-flex-boxes .footer-nav-list div {
         display: none;
+    }
+    .flex-social-handles .social__links span {
+        display: none;
+        margin-right: 3rem;
     }
     .footer-sect .flex-social-handles {
         align-items: start;
@@ -100,10 +113,166 @@
         display: none;
         margin-bottom: 2.4rem;
     }
+    .footer-nav .footer-flex-boxes .footer-nav-list .show__list_items {
+        display: block;
+    }
     #copyright {
         padding-bottom: 3rem;
         margin: 0 0 2.4rem;
         border-bottom: 1px solid #f3f3f3;
     }
 
+}
+@media only screen and (max-width:750px) {
+    #first-sect > div {
+        justify-content: center;
+    }
+    .first-sect-text {
+        width: inherit;
+        margin-bottom: 5rem;
+    }
+    .first-sect-text p {
+        margin-right: 0;
+    }
+    .flutterwave-svg {
+        margin-left: 0 !important;
+        width: 100%;
+        height: auto;
+    }
+    #second-sect {
+        padding-top: 13rem;
+    }
+    .sec-sect-text {
+        margin-bottom: 6rem;
+    }
+    .sec-sect-box {
+        padding-bottom: 10rem;
+    }
+    #third-sect {
+        padding-top: 12rem;
+    }
+    .contigent {
+        max-width: 100%;
+    }
+    #fifth-sect {
+        padding: 23rem 2rem 7rem;
+    }
+    .ready-to-start .cont {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+}
+@media only screen and (max-width:600px) {
+    .first-sect-text h4 {
+        font-size: 5rem !important;
+        line-height: 5.2rem;
+    }
+    .first-sect-text p {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        margin-top: 2rem;
+    }
+    .btn_first_sect, .general_btn {
+        font-size: 1.4rem;
+        height: 5.4rem;
+        width: 11rem;
+    }
+    .btn_first_sect {
+        width: 14rem;
+    }
+    .btn-get-started{
+        margin-top: 0;
+        margin-right: 3rem;
+    }
+    #second-sect,
+    #third-sect,
+    #fourth-sect {
+        padding-top: 10rem !important;
+    }
+    .sec-sect-text p,
+    .start-selling {
+        font-size: 3.6rem !important;
+        line-height: 5rem !important;
+    }    
+    .sec-sect-box {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        padding-bottom: 7rem;
+    }
+    .sec-sect-digits {
+        font-size: 1.2rem;
+        min-width: 3.5rem;
+        height: 3.5rem
+    }
+    .flexText div {
+        width: 3.5rem;
+        height: 3.5rem;
+        border-width: 0 0 6rem;
+    }
+    .flexText h6 {
+        font-size: 1.8rem;
+        margin-left: 1.5rem !important; /* relating the padding-left of .sec-sect-text2 p */
+    }
+    .sec-sect-text2 p {
+        height: 12rem !important;
+        margin-left: 1.625rem;
+        padding-left: calc(1.5rem + 1.8rem) !important;
+        margin-bottom: 2.5rem;
+    }
+    .btn-start-selling {
+        margin-top: 5rem;
+    }
+    .safety-container h2 {
+        font-size: 3.6rem;
+        line-height: 4.4rem;
+        letter-spacing: -0.1rem
+    }
+    .safety-container > p {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        margin: 2.8rem 0rem 4.5rem;
+    }
+    .contigent p {
+        line-height: 2.5rem;
+        margin: 1.1rem 0rem 5rem;
+    }
+    #fifth-sect {
+        padding: 13rem 2rem 7rem !important;
+    }
+    .cont-wrapper-textbox {
+        margin: 2rem auto;
+    }
+    .ready-to-start .cont .cont-wrapper-textbox h3 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        line-height: 3.6rem;
+    }
+    .ready-to-start .cont .cont-wrapper-textbox p {
+        font-size: 1.7rem;
+        line-height: 2.8rem;
+        margin-bottom: 3rem;
+    }
+    .flexbtn-nav {
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .contact_nav_sales {
+        padding: 1rem 0;
+    }
+}
+@media only screen and (max-width:480px) {
+    .general_btn {
+        font-size: 3.5vw;
+        height: 13vw;
+        width: 31vw;
+    }
+
+}
+@media only screen and (max-width:300px) {
+    body {
+        min-width: 300px;
+    }
+    .Payment-illustration img {
+        transform: scale(1.9);
+    }
 }

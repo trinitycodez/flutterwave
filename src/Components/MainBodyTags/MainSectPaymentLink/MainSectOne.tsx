@@ -1,6 +1,6 @@
 import React from 'react'
 
-import flutterwave from '../../Images/flutterwave_svg.png'
+import flutterwave from '../../../Images/flutterwave_svg.png'
 
 // the component
 const MainSectOne = () => {

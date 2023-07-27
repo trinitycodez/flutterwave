@@ -28,10 +28,11 @@
 .dropdown-icon {
     margin: .6rem 0 0 1rem;
 }
-.flex-social-handles .social__links span:not(:last-child) {
+.flex-social-handles .social__links span {
     display: inline-flex;
     margin-right: 3rem;
 }
+.flex-social-handles .social__links span:last-child {margin-right: 0}
 a:link,
 a:visited {
   color: #1d1d1d;
