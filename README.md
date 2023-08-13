@@ -1,18 +1,40 @@
-# Getting Started with Create React App
+# Flutterwave Home Page Clone
 
+It was a project to imitate the flutterwave [home page](https://flutterwave.com/ng) and [payment links](https://flutterwave.com/payment-links) which was done also with the routing exhibition.\
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Tools Used
+
+- https://img.shields.io/badge/Typescript-blue
+- https://img.shields.io/badge/React-FB9129
+
+## Installation
+
+The Node Package Manager to install React Typescript.
+
+```bash
+npx create-react-app flutterwave --template typescript
+```
+
+## Usage
+
+Copy the URL from [trinitycodez](https://github.com/trinitycodez/flutterwave.git) Clone the repository from your terminal with this command
+
+```bash
+git clone https://github.com/trinitycodez/flutterwave.git
+```
+
+## Available Scripts or commands
 
 In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This can be written in the terminal to run the app in development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser or wait for it to automatically display on your default browser.
 
 The page will reload if you make edits.\
-You will also see any lint errors in the console.
+You will also see some lint errors in the console.
 
 ### `npm test`
 
@@ -38,9 +60,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).

@@ -1,5 +1,5 @@
 import React, { MouseEventHandler, useReducer } from 'react';
-import listCountries from '../Components/ListsOfCountries.json';
+import listCountries from '../components/ListsOfCountries.json';
 
 interface ExActionType {
   id:number
@@ -59,11 +59,15 @@ const Countries = ({value, setValueVal}:propsType) => {
               <li key={item.id} onClick={() => {displayCountriesIcon(item)}}>
                 {(item.id === state.id) ? 
                 <div className="cont __Active">
-                  <div className='country__image'></div>
+                  <div className='country__image'>
+                    <img src={item.flag_src} alt={`${item.country} country`} width='100%' height='100%' />
+                  </div>
                   <span>{item.country}</span> 
                 </div> :
                 <div className="cont">
-                  <div className='country__image'></div>
+                  <div className='country__image'>
+                    <img src={item.flag_src} alt={`${item.country} country`} width='100%' height='100%' />
+                  </div>
                   <span>{item.country}</span> 
                 </div>}
               </li>
@@ -72,7 +76,9 @@ const Countries = ({value, setValueVal}:propsType) => {
         </div>
       )}
       <div className='displayed__country' onClick={classicFunc}>
-        <div className="country__flag"></div>
+        <div className="country__flag">
+          <img src={state.flag_src} alt={`${state.country} country`} width='100%' height='100%' />
+        </div>
         <span className="country__name">{state.country}</span>
         <div className="dropdown-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" style={{width:'2rem', height:'auto', fill:'#938d8d'}} className='dropdown_icon__SVG'>

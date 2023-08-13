@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Payment_illustrastion from '../../../Images/Payment_illustrastion.png'
+import Payment_illustrastion from '../../../images/Payment_illustrastion.png'
 
 // the component
 const MainSectTwo = () => {

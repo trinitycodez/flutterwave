@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import org_logo from '../Images/org_logo.png';
+import org_logo from '../images/org_logo.png';
 import HamburgerMenuBar from './HamburgerMenuBar';
 
 type payComm = React.CSSProperties
@@ -37,7 +37,7 @@ const SectionHeaderNav = () => {
     }
 
     return (
-        <nav className="nav-class">
+        <nav className="nav-class" role="navigation" aria-label="main navigation">
             <div className="nav-content-box org-logo">
                 <img src={org_logo} alt="Organisation logo" width="100%" height="100%" />
             </div>
