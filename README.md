@@ -5,8 +5,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Tools Used
 
-- https://img.shields.io/badge/Typescript-blue
-- https://img.shields.io/badge/React-FB9129
+- TypeScript
+- React
 
 ## Installation
 
@@ -18,7 +18,7 @@ npx create-react-app flutterwave --template typescript
 
 ## Usage
 
-Copy the URL from [trinitycodez](https://github.com/trinitycodez/flutterwave.git) Clone the repository from your terminal with this command
+Copy the URL from [@trinitycodez](https://github.com/trinitycodez/flutterwave.git). Clone the repository from your terminal with this command
 
 ```bash
 git clone https://github.com/trinitycodez/flutterwave.git
