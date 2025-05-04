@@ -16,11 +16,11 @@ const SocialFTHandler = ({value, displayFooterProps}:propsType) => {
                         </svg>
                     </div>
                     <nav className='social__links footer-nav-list'>
-                        <span><a href="https://twitter.com/theflutterwave">Twitter</a></span>
-                        <span><a href="https://www.facebook.com/theFlutterwave/">Facebook</a></span>
-                        <span><a href="https://www.instagram.com/theflutterwave/">Instagram</a></span>
-                        <span><a href="https://www.youtube.com/channel/UCBIAbIvsVyppFIiQP9CV-zQ">YouTube</a></span>
-                        <span><a href="https://www.linkedin.com/company/flutterwave/">LinkedIn</a></span>
+                        <span>Twitter</span>
+                        <span>Facebook</span>
+                        <span>Instagram</span>
+                        <span>YouTube</span>
+                        <span>LinkedIn</span>
                     </nav>
                 </div>
             </React.Fragment>)
@@ -28,11 +28,11 @@ const SocialFTHandler = ({value, displayFooterProps}:propsType) => {
         return (
             <React.Fragment>
                 <nav className='social__links'>
-                    <span><a href="https://twitter.com/theflutterwave">Twitter</a></span>
-                    <span><a href="https://www.facebook.com/theFlutterwave/">Facebook</a></span>
-                    <span><a href="https://www.instagram.com/theflutterwave/">Instagram</a></span>
-                    <span><a href="https://www.youtube.com/channel/UCBIAbIvsVyppFIiQP9CV-zQ">YouTube</a></span>
-                    <span><a href="https://www.linkedin.com/company/flutterwave/">LinkedIn</a></span>
+                    <span>Twitter</span>
+                    <span>Facebook</span>
+                    <span>Instagram</span>
+                    <span>YouTube</span>
+                    <span>LinkedIn</span>
                 </nav>
             </React.Fragment>
         )

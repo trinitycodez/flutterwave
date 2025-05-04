@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import '../src/css/countries.css';
+import '../src/countries.css';
 import '../src/App.css';
 
 import Countries from './components/Countries';

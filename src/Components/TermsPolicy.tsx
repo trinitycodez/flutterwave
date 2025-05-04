@@ -12,15 +12,16 @@ const TermsPolicy = ({value, displayFooterProps}:propsType) => {
           <div className="footer-flex-boxes">
             <div className="footer-head" onClick={displayFooterProps}>
               <h5>Legal</h5>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" className="ft__section__icon"><path d="M 6.087 10.998 C 5.507 10.458 5.507 9.541 6.085 9 L 6.135 8.954 C 6.71 8.416 7.603 8.415 8.18 8.951 L 11.66 12.184 C 11.852 12.362 12.148 12.363 12.34 12.185 L 15.856 8.932 C 16.413 8.416 17.283 8.446 17.803 9 L 17.803 9 C 18.324 9.554 18.302 10.424 17.755 10.952 L 12.682 15.843 C 12.299 16.211 11.696 16.217 11.307 15.855 Z"></path>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" className="ft__section__icon">
+                <path d="M 6.087 10.998 C 5.507 10.458 5.507 9.541 6.085 9 L 6.135 8.954 C 6.71 8.416 7.603 8.415 8.18 8.951 L 11.66 12.184 C 11.852 12.362 12.148 12.363 12.34 12.185 L 15.856 8.932 C 16.413 8.416 17.283 8.446 17.803 9 L 17.803 9 C 18.324 9.554 18.302 10.424 17.755 10.952 L 12.682 15.843 C 12.299 16.211 11.696 16.217 11.307 15.855 Z"></path>
               </svg>
             </div>
             <nav className='footer-nav-list'>
-              <p><a href="https://flutterwave.com/ng/privacy-policy">Privacy policy</a></p>
-              <p><a href="https://flutterwave.com/ng/terms">Terms of use</a></p>
-              <p><a href="https://flutterwave.com/ng/cookies-policy">Cookie policy</a></p>
-              <p><a href="https://flutterwave.com/ng/merchant-service-agreement">Merchant service agreement</a></p>
-              <p><a href="https://flutterwave.com/ng/payment-protection-promise">Payment protection promise</a></p>
+              <p>Privacy policy</p>
+              <p>Terms of use</p>
+              <p>Cookie policy</p>
+              <p>Merchant service agreement</p>
+              <p>Payment protection promise</p>
             </nav>
             {/* <nav className='social__links footer-nav-list'>
                 <span><a href="https://twitter.com/theflutterwave">Twitter</a></span>
@@ -30,7 +31,7 @@ const TermsPolicy = ({value, displayFooterProps}:propsType) => {
                 <span><a href="https://www.linkedin.com/company/flutterwave/">LinkedIn</a></span>
             </nav> */}
             <div id='copyright'>
-              <p>&copy;&nbsp;Flutterwave</p>
+              <p>&copy;&nbsp;TrinityCodez 2023</p>
             </div>
           </div>
         </React.Fragment>)
@@ -38,19 +39,19 @@ const TermsPolicy = ({value, displayFooterProps}:propsType) => {
       return(
       <React.Fragment>
         <div id='copyright'>
-          <p>&copy;&nbsp;Flutterwave</p>
+          <p>&copy;&nbsp;TrinityCodez 2023</p>
         </div>
         <div className='footer_last_content'>
           <nav>
-            <p><a href="https://flutterwave.com/ng/privacy-policy">Privacy policy</a></p>
-            <p><a href="https://flutterwave.com/ng/terms">Terms of use</a></p>
-            <p><a href="https://flutterwave.com/ng/cookies-policy">Cookie policy</a></p>
-            <p><a href="https://flutterwave.com/ng/merchant-service-agreement">Merchant service agreement</a></p>
-            <p><a href="https://flutterwave.com/ng/payment-protection-promise">Payment protection promise</a></p>
+            <p>Privacy policy</p>
+            <p>Terms of use</p>
+            <p>Cookie policy</p>
+            <p>Merchant service agreement</p>
+            <p>Payment protection promise</p>
           </nav>
         </div>
       </React.Fragment>
-    )
+    )  
   }
 }
 

@@ -1,9 +1,9 @@
-# Flutterwave Home Page Clone
+# Flutterwave
 
 It was a project to imitate the flutterwave [home page](https://flutterwave.com/ng) and [payment links](https://flutterwave.com/payment-links) which was done also with the routing exhibition.\
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Tools Used
+## Required Skills
 
 - TypeScript
 - React
