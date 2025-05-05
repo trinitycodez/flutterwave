@@ -4,12 +4,12 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import '../src/countries.css';
 import '../src/App.css';
 
-import Countries from './components/Countries';
-import SectionHeaderNav from './components/SectionHeaderNav';
-import SocialFTHandler from './components/SocialFTHandler';
-import TermsPolicy from './components/TermsPolicy';
-import MainHomeTag from './components/MainHomeTag';
-import MainTagPaymentLinks from './components/mainBodyTags/mainSectPaymentLink/MainTagPaymentLinks';
+import Countries from '../src/components/Countries';
+import SectionHeaderNav from '../src/components/SectionHeaderNav';
+import SocialFTHandler from '../src/components/SocialFTHandler';
+import TermsPolicy from '../src/components/TermsPolicy';
+import MainHomeTag from '../src/components/MainHomeTag';
+import MainTagPaymentLinks from '../src/components/mainBodyTags/mainSectPaymentLink/MainTagPaymentLinks';
 
 export const MenuContext = React.createContext(0);
 export const SlideCardContext = React.createContext({slideCard:false, setWidth:document.body.clientWidth});
