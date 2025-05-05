@@ -1,11 +1,11 @@
-import React from 'react'
+import { Fragment } from 'react'
 
-import Payment_illustrastion from '../../../images/Payment_illustrastion.png'
+import Payment_illustrastion from '@/src/images/Payment_illustrastion.png'
 
 // the component
 const MainSectTwo = () => {
     return (
-        <React.Fragment>
+        <Fragment>
             <div className='sec-sect-text'>
                 <p>
                     Collect payments in minutes, without a line of code
@@ -47,7 +47,7 @@ const MainSectTwo = () => {
                 </div>
             </div>
 
-        </React.Fragment>
+        </Fragment>
     )
 }
 

@@ -1,8 +1,8 @@
-import React from 'react'
+import { Fragment } from 'react'
 
 const MainSectFive = () => {
   return (
-    <React.Fragment>
+    <Fragment>
         <div className="cont">
             <div className="cont-wrapper-textbox">
                 <h3>Ready to start selling?</h3>
@@ -24,7 +24,7 @@ const MainSectFive = () => {
                 </div>
             </div>
         </div>
-    </React.Fragment>
+    </Fragment>
   )
 }
 

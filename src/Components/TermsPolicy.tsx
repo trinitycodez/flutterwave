@@ -1,4 +1,4 @@
-import React from 'react'
+import { Fragment } from 'react'
 
 type propsType = {
   value:number,
@@ -8,7 +8,7 @@ const TermsPolicy = ({value, displayFooterProps}:propsType) => {
 
     if (value <= 900) {
       return (
-        <React.Fragment>
+        <Fragment>
           <div className="footer-flex-boxes">
             <div className="footer-head" onClick={displayFooterProps}>
               <h5>Legal</h5>
@@ -34,25 +34,25 @@ const TermsPolicy = ({value, displayFooterProps}:propsType) => {
               <p>&copy;&nbsp;TrinityCodez 2023</p>
             </div>
           </div>
-        </React.Fragment>)
+        </Fragment>)
     } else {
       return(
-      <React.Fragment>
-        <div id='copyright'>
-          <p>&copy;&nbsp;TrinityCodez 2023</p>
-        </div>
-        <div className='footer_last_content'>
-          <nav>
-            <p>Privacy policy</p>
-            <p>Terms of use</p>
-            <p>Cookie policy</p>
-            <p>Merchant service agreement</p>
-            <p>Payment protection promise</p>
-          </nav>
-        </div>
-      </React.Fragment>
-    )  
-  }
+        <Fragment>
+          <div id='copyright'>
+            <p>&copy;&nbsp;TrinityCodez 2023</p>
+          </div>
+          <div className='footer_last_content'>
+            <nav>
+              <p>Privacy policy</p>
+              <p>Terms of use</p>
+              <p>Cookie policy</p>
+              <p>Merchant service agreement</p>
+              <p>Payment protection promise</p>
+            </nav>
+          </div>
+        </Fragment>
+      )  
+    }
 }
 
 export default TermsPolicy

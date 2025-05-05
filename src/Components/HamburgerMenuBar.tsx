@@ -1,9 +1,9 @@
-import React, { useState, useContext, ReactNode } from 'react';
+import { Fragment, useState, useContext, ReactNode } from 'react';
 import { NavLink } from 'react-router-dom';
-import '../css/hamburgerMenuBar.css';
+import '@/src/css/hamburgermenubar.css';
 
-import testing from '../images/Payment_illustrastion.png';
-import { MenuContext } from '../App';
+import testing from '@/src/images/Payment_illustrastion.png';
+import { MenuContext } from '@/src/App';
 
 type propsType = {
     togglerBox: {
@@ -38,7 +38,7 @@ const HamburgerMenuBar = ({togglerBox, payHoverProps, payOutProps}:propsType) =>
     
     return (
         (hamMenuHolder <= 900) ?
-            <React.Fragment>
+            <Fragment>
                 {
                     (transitBar === "transitBar") &&
                     document.querySelector('.header-class')!.classList.add('transitBarHMB') as ReactNode
@@ -159,8 +159,8 @@ const HamburgerMenuBar = ({togglerBox, payHoverProps, payOutProps}:propsType) =>
                     <span className={`bar_span ${transitBar}`}></span>
                     <span className={`bar_span ${transitBar}`}></span>
                 </div>
-            </React.Fragment> :
-            <React.Fragment>
+            </Fragment> :
+            <Fragment>
                 {
                     (transitBar === "transitBar") &&
                     document.querySelector('.header-class')!.classList.remove('transitBarHMB') as ReactNode
@@ -256,7 +256,7 @@ const HamburgerMenuBar = ({togglerBox, payHoverProps, payOutProps}:propsType) =>
                 <div className="nav-content-box">
                     <button type='button' id="btn-sign-in"><a href="http://flutterwave.com/login">Sign in</a></button>
                 </div>
-            </React.Fragment>
+            </Fragment>
     )
 }
 

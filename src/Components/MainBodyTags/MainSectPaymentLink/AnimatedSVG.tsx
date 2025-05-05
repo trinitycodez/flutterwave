@@ -1,6 +1,3 @@
-import React from 'react'
-// import animatedSVG from '../SVGs/animatedSVG.svg'
-
 function AnimatedSVG() {
   return (
     <figure>

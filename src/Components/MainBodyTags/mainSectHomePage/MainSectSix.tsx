@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useContext, MouseEvent } from 'react'
-import { SlideCardContext } from '../../../App';
-import network from '../../../svgs/network.svg'
-import masterCardLogo from '../../../svgs/masterCardLogo.svg'
+import { SlideCardContext } from '@/src/App';
+import network from '@/src/svgs/network.svg'
+import masterCardLogo from '@/src/svgs/mastercardlogo.svg'
 
 
 const MainSectSix = () => {

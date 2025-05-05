@@ -1,13 +1,13 @@
-import React, { useEffect } from 'react';
-import '../../../css/homePaymentLinks.css';
-import '../../../css/MDView.css';
-import '../../../css/animatedSVG.css';
-import MainSectOne from './MainSectOne';
-import MainSectTwo from './MainSectTwo';
-import MainSectThree from './MainSectThree';
-import MainSectFour from './MainSectFour';
-import MainSectFive from './MainSectFive';
-import AnimatedSVG from './AnimatedSVG';
+import { useEffect, Fragment } from 'react';
+import '@/src/css/homepaymentlinks.css';
+import '@/src/css/mdview.css';
+import '@/src/css/animatedsvg.css';
+import MainSectOne from './mainsectone';
+import MainSectTwo from './mainsecttwo';
+import MainSectThree from './mainsectthree';
+import MainSectFour from './mainsectfour';
+import MainSectFive from './mainsectfive';
+import AnimatedSVG from './animatedsvg';
 
 const MainTagPaymentLinks = () => {
 
@@ -16,7 +16,7 @@ const MainTagPaymentLinks = () => {
   }, [])
 
   return (
-    <React.Fragment>
+    <Fragment>
       <section className="all-sect" id="first-sect">
         <MainSectOne />
       </section>
@@ -35,7 +35,7 @@ const MainTagPaymentLinks = () => {
       <section className="all-sect ready-to-start" id='fifth-sect'>
         <MainSectFive />
       </section>
-    </React.Fragment>
+    </Fragment>
   )
 }
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import org_logo from '../images/org_logo.png';
-import HamburgerMenuBar from './HamburgerMenuBar';
+import HamburgerMenuBar from './hamburgermenubar';
 
 type payComm = React.CSSProperties
 

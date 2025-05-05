@@ -1,4 +1,4 @@
-import globalNet from '../../../images/globeRounder.png'
+import globalNet from '@/src/images/globeRounder.png'
 
 const MainSectEight = () => {
   return (

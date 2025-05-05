@@ -1,17 +1,17 @@
-import React, { useEffect } from 'react'
+import { Fragment, useEffect } from 'react'
 
-import '../../src/css/homeApp.css'
-import '../css/MDViewHomeApp.css'
-import '../css/animatedStackedATM.css'
-import MainSectOne from './mainBodyTags/mainSectHomePage/MainSectOne'
-import MainSectTwo from './mainBodyTags/mainSectHomePage/MainSectTwo'
-import MainSectThree from './mainBodyTags/mainSectHomePage/MainSectThree'
-import MainSectFour from './mainBodyTags/mainSectHomePage/MainSectFour'
-import MainSectFive from './mainBodyTags/mainSectHomePage/MainSectFive'
-import PayMainSectFive from './mainBodyTags/mainSectPaymentLink/MainSectFive'
-import MainSectSix from './mainBodyTags/mainSectHomePage/MainSectSix'
-import MainSectSeven from './mainBodyTags/mainSectHomePage/MainSectSeven'
-import MainSectEight from './mainBodyTags/mainSectHomePage/MainSectEight'
+import '../../src/css/homeapp.css'
+import '../css/mdviewhomeapp.css'
+import '../css/animatedstackedatm.css'
+import MainSectOne from './mainbodytags/mainsecthomepage/mainsectone'
+import MainSectTwo from './mainbodytags/mainsecthomepage/mainsecttwo'
+import MainSectThree from './mainbodytags/mainsecthomepage/mainsectthree'
+import MainSectFour from './mainbodytags/mainsecthomepage/mainsectfour'
+import MainSectFive from './mainbodytags/mainsecthomepage/mainsectfive'
+import PayMainSectFive from './mainbodytags/mainsectpaymentlink/mainsectfive'
+import MainSectSix from './mainbodytags/mainsecthomepage/mainsectsix'
+import MainSectSeven from './mainbodytags/mainsecthomepage/mainsectseven'
+import MainSectEight from './mainbodytags/mainsecthomepage/mainsecteight'
 
 
 const MainHomeTag = () => {
@@ -22,7 +22,7 @@ const MainHomeTag = () => {
     
 
   return (
-    <React.Fragment>
+    <Fragment>
         <section className="all-sect first_section__class" id='first-sect'>
             <MainSectOne />
         </section>
@@ -51,7 +51,7 @@ const MainHomeTag = () => {
             <PayMainSectFive />
         </section>
 
-    </React.Fragment>
+    </Fragment>
   )
 }
 

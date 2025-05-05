@@ -1,4 +1,4 @@
-import flutterwave from '../../../images/flutterwave_svg.png'
+import flutterwave from '@/src/images/flutterwave_svg.png'
 
 // the component
 const MainSectOne = () => {

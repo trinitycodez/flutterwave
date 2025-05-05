@@ -1,5 +1,5 @@
-import React, { MouseEventHandler, useReducer } from 'react';
-import listCountries from '../components/ListsOfCountries.json';
+import { Fragment, memo, MouseEventHandler, useReducer } from 'react';
+import listCountries from './ListsOfCountries.json';
 
 interface ExActionType {
   id:number
@@ -51,7 +51,7 @@ const Countries = ({value, setValueVal}:propsType) => {
 
   // smtin
   return (
-    <React.Fragment>
+    <Fragment>
       {value && (
         <div className="show__countries">
           <ul>
@@ -86,8 +86,8 @@ const Countries = ({value, setValueVal}:propsType) => {
           </svg>
         </div>
       </div>
-    </React.Fragment>
+    </Fragment>
   )
 }
 
-export default React.memo(Countries)
+export default memo(Countries)
