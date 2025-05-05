@@ -1,6 +1,6 @@
 import { Fragment } from 'react'
 
-import Payment_illustrastion from '@/src/images/Payment_illustrastion.png'
+import Payment_illustrastion from '../../../images/Payment_illustrastion.png'
 
 // the component
 const MainSectTwo = () => {

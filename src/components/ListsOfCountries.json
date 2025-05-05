@@ -1,0 +1,79 @@
+{
+    "countries": [
+        {
+            "id": 1,
+            "country": "Cameroon",
+            "flag_src": "https://flutterwave.com/images/flags/cm.svg"
+        },
+        {
+            "id": 2,
+            "country": "Egypt",
+            "flag_src": "https://flutterwave.com/images/flags/eg.svg"
+        },
+        {
+            "id": 3,
+            "country": "Ivory Coast",
+            "flag_src": "https://flutterwave.com/images/flags/ci.svg"
+        },
+        {
+            "id": 4,
+            "country": "Kenya",
+            "flag_src": "https://flutterwave.com/images/flags/ke.svg"
+        },
+        {
+            "id": 5,
+            "country": "Malawi",
+            "flag_src": "https://flutterwave.com/images/flags/mw.svg"
+        },
+        {
+            "id": 6,
+            "country": "Mauritis",
+            "flag_src": "https://flutterwave.com/images/flags/mu.svg"
+        },
+        {
+            "id": 7,
+            "country": "Nigeria",
+            "flag_src": "https://flutterwave.com/images/flags/ng.svg"
+        },
+        {
+            "id": 8,
+            "country": "Rest of Europe",
+            "flag_src": "https://flutterwave.com/images/flags/eu.svg"
+        },
+        {
+            "id": 9,
+            "country": "Rwanda",
+            "flag_src": "https://flutterwave.com/images/flags/rw.svg"
+        },
+        {
+            "id": 10,
+            "country": "Senegal",
+            "flag_src": "https://flutterwave.com/images/flags/sn.svg"
+        },
+        {
+            "id": 11,
+            "country": "South Africa",
+            "flag_src": "https://flutterwave.com/images/flags/za.svg"
+        },
+        {
+            "id": 12,
+            "country": "Tanzania",
+            "flag_src": "https://flutterwave.com/images/flags/tz.svg"
+        },
+        {
+            "id": 13,
+            "country": "Uganda",
+            "flag_src": "https://flutterwave.com/images/flags/ug.svg"
+        },
+        {
+            "id": 14,
+            "country": "United Kingdom",
+            "flag_src": "https://flutterwave.com/images/flags/gb.svg"
+        },
+        {
+            "id": 15,
+            "country": "United States",
+            "flag_src": "https://flutterwave.com/images/flags/us.svg"
+        }
+    ]
+}

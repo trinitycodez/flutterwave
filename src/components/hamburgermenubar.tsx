@@ -1,9 +1,9 @@
 import { Fragment, useState, useContext, ReactNode } from 'react';
 import { NavLink } from 'react-router-dom';
-import '@/src/css/hamburgermenubar.css';
+import '../css/hamburgermenubar.css';
 
-import testing from '@/src/images/Payment_illustrastion.png';
-import { MenuContext } from '@/src/App';
+import testing from '../images/Payment_illustrastion.png';
+import { MenuContext } from '../App';
 
 type propsType = {
     togglerBox: {

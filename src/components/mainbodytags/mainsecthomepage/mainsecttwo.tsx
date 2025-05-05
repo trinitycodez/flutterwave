@@ -1,5 +1,5 @@
-import footCity from '@/src/images/footCity.png'
-import famasi from '@/src/images/Famasi.png'
+import footCity from '../../../images/footCity.png'
+import famasi from '../../../images/Famasi.png'
 
 
 const MainSectTwo = () => {

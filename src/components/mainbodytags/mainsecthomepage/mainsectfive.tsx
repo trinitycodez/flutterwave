@@ -1,5 +1,5 @@
-import creator from '@/src/images/Creator.png'
-import yangaBeauty from '@/src/images/yanga-beauty.png'
+import creator from '../../../images/Creator.png'
+import yangaBeauty from '../../../images/yanga-beauty.png'
 
 const MainSectFive = () => {
   return (

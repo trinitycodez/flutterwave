@@ -1,4 +1,4 @@
-import centerPhone from '@/src/images/center_Phone_ads.png'
+import centerPhone from '../../../images/center_Phone_ads.png'
 
 const MainSectFour = () => {
   return (

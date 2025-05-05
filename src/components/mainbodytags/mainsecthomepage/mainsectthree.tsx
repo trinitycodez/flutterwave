@@ -1,9 +1,9 @@
-import uber from '@/src/svgs/uber.svg'
-import mtn from '@/src/svgs/mtn.svg'
-import chipperCash from '@/src/svgs/chippercash.svg'
-import piggyVest from '@/src/svgs/piggyvest.svg'
-import wise from '@/src/svgs/wise.svg'
-import microsoft from '@/src/svgs/microsoft.svg'
+import uber from '../../../svgs/uber.svg'
+import mtn from '../../../svgs/mtn.svg'
+import chipperCash from '../../../svgs/chippercash.svg'
+import piggyVest from '../../../svgs/piggyvest.svg'
+import wise from '../../../svgs/wise.svg'
+import microsoft from '../../../svgs/microsoft.svg'
 
 
 const MainSectThree = () => {

@@ -1,7 +1,7 @@
 import { useEffect, Fragment } from 'react';
-import '@/src/css/homepaymentlinks.css';
-import '@/src/css/mdview.css';
-import '@/src/css/animatedsvg.css';
+import '../../../css/homepaymentlinks.css';
+import '../../../css/mdview.css';
+import '../../../css/animatedsvg.css';
 import MainSectOne from './mainsectone';
 import MainSectTwo from './mainsecttwo';
 import MainSectThree from './mainsectthree';

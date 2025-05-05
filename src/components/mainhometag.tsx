@@ -1,6 +1,6 @@
 import { Fragment, useEffect } from 'react'
 
-import '../../src/css/homeapp.css'
+import '../css/homeapp.css'
 import '../css/mdviewhomeapp.css'
 import '../css/animatedstackedatm.css'
 import MainSectOne from './mainbodytags/mainsecthomepage/mainsectone'
