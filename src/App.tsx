@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import '@/src/countries.css';
-import '@/src/App.css';
+import './countries.css';
+import './App.css';
 
-import Countries from '@/src/components/countries';
-import SectionHeaderNav from '@/src/components/sectionheadernav';
-import SocialFTHandler from '@/src/components/socialfthandler';
-import TermsPolicy from '@/src/components/termspolicy';
-import MainHomeTag from '@/src/components/mainhometag';
-import MainTagPaymentLinks from '@/src/components/mainbodytags/mainsectpaymentlink/maintagpaymentlinks';
+import Countries from './components/countries';
+import SectionHeaderNav from './components/sectionheadernav';
+import SocialFTHandler from './components/socialfthandler';
+import TermsPolicy from './components/termspolicy';
+import MainHomeTag from './components/mainhometag';
+import MainTagPaymentLinks from './components/mainbodytags/mainsectpaymentlink/maintagpaymentlinks';
 
 export const MenuContext = React.createContext(0);
 export const SlideCardContext = React.createContext({slideCard:false, setWidth:document.body.clientWidth});
